@@ -1,0 +1,131 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a:focus, a:hover {
+    font-style: italic;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: aliceblue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.5rem;
+}
+section img{
+    padding:0px;
+    padding-left: 7%;
+}
+
+section p {
+    background-color: lightgrey;
+    width: 1000px;
+    border: 10px solid green;
+    padding: 50px;
+    margin: 100px;
+    height: 230px;
+    padding-bottom: 10px;
+}
+
+fs ul{
+    background-color: lightgrey;
+    width: 450px;
+    border: 10px solid green;
+    padding: 10px;
+    margin: 100px;
+    height: 230px;
+    padding-bottom: 200px;
+    padding-left: 3%;
+    padding-top: 3%;
+    padding-right: .1%;
+}
+ms ul{
+    background-color: lightgrey;
+    width: 450px;
+    border: 10px solid green;
+    padding: 10px;
+    margin: 100px;
+    height: 230px;
+    padding-bottom: 200px;
+    padding-left: 3%;
+    padding-top: 3%;
+    padding-right: .1%;
+    float:right;
+}
+
+/* the styles for the navigation menu */
+#nav_menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+#nav_menu ul li {
+    float: left;
+    width: 20%;
+}
+#nav_menu ul li a {
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #000000;
+    color: white;
+    font-weight: bold;
+}
+
+#nav_menu ul ul {
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul ul li {
+    float: none;
+}
+#nav_menu ul li:hover > ul {
+    display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+/* tablet portrait to standard 960 */
+@media only screen and (max-width: 959px) {
+    section h1 { font-size: 135%; }
+    section h2, aside h2 { font-size: 120%; }
+}
+
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 767px) {
+    header img { float: none; }
+    header { text-align: center; }
+
+    #nav_menu {
+        display: none;
+    }
+    #mobile_menu {
+        display: block;
+    }
+    .slicknav_menu {
+        background-color: #800000 !important;
+    }
+}
+
+/* mobile portrait to mobile landscape */
+@media only screen and (max-width: 479px) {
+    body { font-size: 90%; }
+}

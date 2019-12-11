@@ -1,0 +1,122 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a:focus, a:hover {
+    font-style: italic;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: aliceblue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.5rem;
+}
+aside{
+    padding:30px;
+    padding-left: 40%;
+}
+.division{
+    float: right;
+    padding:90px;
+    padding-right: 0%;
+    padding-bottom: 90%;
+    padding-left: 19%;
+}
+
+hd p{
+    width: 320px;
+    padding: 10px;
+    border: 5px solid black;
+    margin: 0;
+    padding-left: 8%;
+    float: right;
+
+}
+
+h1{
+    text-align: center;
+}
+
+/* the styles for the navigation menu */
+#nav_menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+#nav_menu ul li {
+    float: left;
+    width: 20%;
+}
+#nav_menu ul li a {
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #000000;
+    color: white;
+    font-weight: bold;
+}
+
+#nav_menu ul ul {
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul ul li {
+    float: none;
+}
+#nav_menu ul li:hover > ul {
+    display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+.slicknav_menu {
+        display: none;
+}
+}
+
+/* tablet portrait to standard 960 */
+@media only screen and (max-width: 959px) {
+    section h1 { font-size: 135%; }
+    section h2, aside h2 { font-size: 120%; }
+}
+
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 767px) {
+    header img { float: none; }
+    header { text-align: center; }
+
+    #nav_menu {
+        display: none;
+    }
+    #mobile_menu {
+        display: block;
+    }
+    .slicknav_menu {
+        background-color: #800000 !important;
+        display: block;
+    }
+}
+
+/* mobile portrait to mobile landscape */
+@media only screen and (max-width: 479px) {
+    body { font-size: 90%; }
+}
