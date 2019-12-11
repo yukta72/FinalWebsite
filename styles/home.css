@@ -36,28 +36,30 @@ section p {
 
 fs ul{
     background-color: lightgrey;
-    width: 450px;
+    width: 400px;
     border: 10px solid green;
     padding: 10px;
-    margin: 100px;
+    margin-left: 120px;
     height: 230px;
     padding-bottom: 200px;
     padding-left: 3%;
     padding-top: 3%;
     padding-right: .1%;
+    float:left;
 }
 ms ul{
     background-color: lightgrey;
-    width: 450px;
+    width: 400px;
     border: 10px solid green;
     padding: 10px;
-    margin: 100px;
+    margin-right: 180px;
     height: 230px;
     padding-bottom: 200px;
     padding-left: 3%;
     padding-top: 3%;
     padding-right: .1%;
-    float:right;
+    float: right;
+
 }
 
 /* the styles for the navigation menu */
